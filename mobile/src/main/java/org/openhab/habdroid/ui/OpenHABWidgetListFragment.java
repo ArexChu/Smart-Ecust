@@ -178,6 +178,33 @@ public class OpenHABWidgetListFragment extends ListFragment {
                 Log.d(TAG, "Widget long-clicked " + String.valueOf(position));
                 OpenHABWidget openHABWidget = openHABWidgetAdapter.getItem(position);
                 Log.d(TAG, "Widget type = " + openHABWidget.getType());
+
+                if (openHABWidget.getLabel().equals("302")) {
+                    selectedOpenHABWidget = openHABWidget;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setTitle(R.string.select_dialog_title);
+                    String str[] = {"选灯", "选座","取消"};
+                    builder.setItems(str, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            if (which == 0) {
+                                Intent lightSelect = new Intent(getActivity().getApplicationContext(),
+                                        LightSelect.class);
+                                startActivityForResult(lightSelect, 0);
+                            } else if (which == 1) {
+                                Intent seatSelect = new Intent(getActivity().getApplicationContext(),
+                                        SeatSelect.class);
+                                startActivityForResult(seatSelect, 0);
+                            } else {
+                                dialog.cancel();
+                            }
+                            Util.overridePendingTransition(getActivity(), false);
+                            selectedOpenHABWidget = null;
+                        }
+                    });
+                    builder.show();
+                    return true;
+                }
+
                 if (openHABWidget.getType().equals("Switch") || openHABWidget.getType().equals("Selection") ||
                         openHABWidget.getType().equals("Colorpicker")) {
                     selectedOpenHABWidget = openHABWidget;

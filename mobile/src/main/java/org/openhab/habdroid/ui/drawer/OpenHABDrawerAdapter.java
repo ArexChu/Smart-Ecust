@@ -101,7 +101,7 @@ public class OpenHABDrawerAdapter extends ArrayAdapter<OpenHABDrawerItem> {
                     drawerItemImage.setImageUrl(iconUrl, R.drawable.openhabiconsmall,
                             openHABUsername, openHABPassword);
                 } else {
-                    drawerItemImage.setImageDrawable(getContext().getResources().getDrawable(R.drawable.openhabicon_light));
+                    drawerItemImage.setImageDrawable(getContext().getResources().getDrawable(R.drawable.teaching_building));
                 }
                 break;
             case TYPE_DIVIDER_ITEM:
