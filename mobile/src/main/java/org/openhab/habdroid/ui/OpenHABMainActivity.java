@@ -172,7 +172,7 @@ public class OpenHABMainActivity extends AppCompatActivity implements OnWidgetSe
     // Progress dialog
     private ProgressDialog mProgressDialog;
     // If Voice Recognition is enabled
-    private boolean mVoiceRecognitionEnabled = false;
+    private boolean mVoiceRecognitionEnabled = true;
     // If openHAB discovery is enabled
     private boolean mServiceDiscoveryEnabled = true;
     // NFC Launch data
