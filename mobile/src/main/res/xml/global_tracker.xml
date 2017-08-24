@@ -7,7 +7,7 @@
     <!-- Treat events as test events and don't send to google -->
     <bool name="ga_dryRun">false</bool>
     <!-- The screen names that will appear in reports -->
-    <string name="org.openhab.habdroid.ui.OpenHABMainActivity">OpenHABMainActivity</string>
-    <string name="org.openhab.habdroid.ui.OpenHABWriteTagActivity">OpenHABWriteTagActivity</string>
-    <string name="org.openhab.habdroid.ui.OpenHABPreferencesActivity">OpenHABPreferencesActivity</string>
+    <string name="org.openhab.ecust.ui.OpenHABMainActivity">OpenHABMainActivity</string>
+    <string name="org.openhab.ecust.ui.OpenHABWriteTagActivity">OpenHABWriteTagActivity</string>
+    <string name="org.openhab.ecust.ui.OpenHABPreferencesActivity">OpenHABPreferencesActivity</string>
 </resources>

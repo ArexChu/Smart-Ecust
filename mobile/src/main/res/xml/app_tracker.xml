@@ -5,7 +5,7 @@
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
     <integer name="ga_sessionTimeout">-1</integer>
-    <screenName name="org.openhab.habdroid.ui.OpenHABMainActivity">OpenHABMainActivity</screenName>
-    <screenName name="org.openhab.habdroid.ui.OpenHABWriteTagActivity">OpenHABWriteTagActivity</screenName>
-    <screenName name="org.openhab.habdroid.ui.OpenHABPreferencesActivity">OpenHABPreferencesActivity</screenName>
+    <screenName name="org.openhab.ecust.ui.OpenHABMainActivity">OpenHABMainActivity</screenName>
+    <screenName name="org.openhab.ecust.ui.OpenHABWriteTagActivity">OpenHABWriteTagActivity</screenName>
+    <screenName name="org.openhab.ecust.ui.OpenHABPreferencesActivity">OpenHABPreferencesActivity</screenName>
 </resources>

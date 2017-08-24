@@ -6,7 +6,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "org.openhab.habdroid"
+        applicationId "org.openhab.ecust"
         minSdkVersion 14
         targetSdkVersion 25
         multiDexEnabled = true

@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <org.openhab.habdroid.ui.OpenHABViewPager
+            <org.openhab.ecust.ui.OpenHABViewPager
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

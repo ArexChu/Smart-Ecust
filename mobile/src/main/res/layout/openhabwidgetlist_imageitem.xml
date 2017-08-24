@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/widgetlist_item_right_margin"
     >
 
-    <org.openhab.habdroid.util.MySmartImageView
+    <org.openhab.ecust.util.MySmartImageView
         android:id="@+id/imageimage"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

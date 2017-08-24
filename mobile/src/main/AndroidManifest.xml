@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.openhab.habdroid"
+    package="org.openhab.ecust"
     android:versionCode="24"
     android:versionName="1.8.0.7" >
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,7 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="org.openhab.habdroid.gcm.permission.C2D_MESSAGE"
+        android:name="org.openhab.ecust.gcm.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="org.openhab.habdroid.gcm.permission.C2D_MESSAGE" />
@@ -29,7 +29,7 @@
         android:required="false" />
 
     <application
-        android:name=".core.HABDroid"
+        android:name="org.openhab.ecust.core.HABDroid"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@drawable/smart_ecust_icon_material"
@@ -39,10 +39,10 @@
         android:supportsPictureInPicture="false"
         android:theme="@style/HABDroid.Light">
         <activity
-            android:name="org.openhab.habdroid.ui.OpenHABPreferencesActivity"
+            android:name="org.openhab.ecust.ui.OpenHABPreferencesActivity"
             android:label="@string/app_preferences_name" />
         <activity
-            android:name="org.openhab.habdroid.ui.OpenHABMainActivity"
+            android:name="org.openhab.ecust.ui.OpenHABMainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop">
             <!-- for Nougat -->
@@ -71,52 +71,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.openhab.habdroid.ui.OpenHABWriteTagActivity"
+            android:name="org.openhab.ecust.ui.OpenHABWriteTagActivity"
             android:label="@string/title_activity_openhabwritetag" />
         <activity android:name="de.duenndns.ssl.MemorizingActivity" />
 
         <activity
-            android:name=".ui.SeatSelect"
+            android:name="org.openhab.ecust.ui.SeatSelect"
             android:label="@string/app_select"
-            android:parentActivityName=".ui.OpenHABMainActivity"
+            android:parentActivityName="org.openhab.ecust.ui.OpenHABMainActivity"
             android:theme="@style/HABDroid.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.OpenHABMainActivity" />
+                android:value="org.openhab.ecust.ui.OpenHABMainActivity" />
         </activity>
 
         <activity
-            android:name=".ui.LightSelect"
+            android:name="org.openhab.ecust.ui.LightSelect"
             android:label="@string/app_select"
-            android:parentActivityName=".ui.OpenHABMainActivity"
+            android:parentActivityName="org.openhab.ecust.ui.OpenHABMainActivity"
             android:theme="@style/HABDroid.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.OpenHABMainActivity" />
+                android:value="org.openhab.ecust.ui.OpenHABMainActivity" />
         </activity>
 
         <service
-            android:name=".core.OpenHABVoiceService"
+            android:name="org.openhab.ecust.core.OpenHABVoiceService"
             android:exported="false" />
 
         <receiver
-            android:name="org.openhab.habdroid.core.GcmBroadcastReceiver"
+            android:name="org.openhab.ecust.core.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <category android:name="org.openhab.habdroid" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".core.NotificationDeletedBroadcastReceiver">
+        <receiver android:name="org.openhab.ecust.core.NotificationDeletedBroadcastReceiver">
             <intent-filter>
                 <action android:name="org.openhab.habdroid.notification.deleted" />
                 <category android:name="org.openhab.habdroid" />
             </intent-filter>
         </receiver>
 
-        <service android:name="org.openhab.habdroid.core.GcmIntentService" />
+        <service android:name="org.openhab.ecust.core.GcmIntentService" />
         <receiver
-            android:name=".ui.VoiceWidget"
+            android:name="org.openhab.ecust.ui.VoiceWidget"
             android:label="@string/title_voice_widget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

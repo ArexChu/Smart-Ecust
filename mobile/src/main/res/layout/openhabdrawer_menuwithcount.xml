@@ -7,7 +7,7 @@
     android:minHeight="48dp"
     android:gravity="center_vertical"
     android:layout_gravity="center_vertical">
-    <org.openhab.habdroid.util.MySmartImageView
+    <org.openhab.ecust.util.MySmartImageView
         android:layout_width="32dp"
         android:layout_height="match_parent"
         android:id="@+id/itemimage"
