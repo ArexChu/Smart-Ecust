@@ -19,40 +19,40 @@
     <string name="app_discovery">Activate Discovery</string>
     <string name="empty_string" translatable="false"></string>
     <!-- Main menu items -->
-    <string name="mainmenu_openhab_preferences">Settings</string>
-    <string name="mainmenu_openhab_selectsitemap">Select default sitemap</string>
-    <string name="mainmenu_openhab_writetag">Write NFC tag</string>
-    <string name="mainmenu_openhab_info">openHAB info</string>
-    <string name="mainmenu_openhab_clearcache">Clear images cache</string>
+    <string name="mainmenu_openhab_preferences">设置</string>
+    <string name="mainmenu_openhab_selectsitemap">选择教学楼</string>
+    <string name="mainmenu_openhab_writetag">NFC</string>
+    <string name="mainmenu_openhab_info">智慧校园信息</string>
+    <string name="mainmenu_openhab_clearcache">清除图片缓存</string>
     <!-- App settings strings -->
-    <string name="settings_connection_title">Connection Settings</string>
-    <string name="settings_display_title">Display Settings</string>
-    <string name="settings_misc_title">Misc Settings</string>
-    <string name="settings_openhab_url">openHAB URL</string>
+    <string name="settings_connection_title">连接</string>
+    <string name="settings_display_title">显示</string>
+    <string name="settings_misc_title">其它</string>
+    <string name="settings_openhab_url">智慧校园URL</string>
     <string name="settings_openhab_url_summary">Manually configured openHAB URL. Disables autodiscovery if configured.</string>
-    <string name="settings_openhab_alturl">openHAB Remote URL</string>
+    <string name="settings_openhab_alturl">智慧校园云URL</string>
     <string name="settings_openhab_alturl_summary">Remote openHAB URL (used when local openHAB is unavailable)</string>
-    <string name="settings_openhab_username">Username</string>
+    <string name="settings_openhab_username">用户名</string>
     <string name="settings_openhab_username_summary">openHAB username</string>
-    <string name="settings_openhab_password">Password</string>
+    <string name="settings_openhab_password">密码</string>
     <string name="settings_openhab_password_summary">openHAB password</string>
-    <string name="settings_openhab_sslclientcert">SSL client certificate</string>
-    <string name="settings_openhab_sslclientcert_howto">SSL client certificate how-to</string>
+    <string name="settings_openhab_sslclientcert">SSL客户端证书</string>
+    <string name="settings_openhab_sslclientcert_howto">SSL客户端证书制作</string>
     <string name="settings_openhab_sslclientcert_howto_url" translatable="false">https://github.com/openhab/openhab.android/blob/master/KeyAuth.md</string>
-    <string name="settings_openhab_screentimeroff">Disable display timer</string>
-    <string name="settings_openhab_screentimeroff_summary">Disable display switch off timer when openHAB is running</string>
-    <string name="settings_openhab_demomode">Demo mode</string>
-    <string name="settings_openhab_demomode_summary">Run in demo mode</string>
-    <string name="settings_openhab_theme">openHAB Theme</string>
-    <string name="settings_openhab_appversion">openHAB App Version</string>
-    <string name="settings_openhab_sslcert">Ignore SSL certificate</string>
-    <string name="settings_openhab_sslcert_summary">Ignore certificate validation during SSL handshake</string>
-    <string name="settings_openhab_sslhost">Ignore SSL hostname</string>
-    <string name="settings_openhab_sslhost_summary">Ignore hostname check during SSL handshake</string>
-    <string name="settings_openhab_fullscreen">Full Screen</string>
-    <string name="settings_openhab_fullscreen_summary">Display in fullscreen mode</string>
-    <string name="settings_openhab_icon_format">Icon format</string>
-    <string name="settings_ringtone">Ring tone</string>
+    <string name="settings_openhab_screentimeroff">禁用显示计时器</string>
+    <string name="settings_openhab_screentimeroff_summary">当智慧校园运行时禁止显示关闭计时器</string>
+    <string name="settings_openhab_demomode">默认模式</string>
+    <string name="settings_openhab_demomode_summary">运行默认模式</string>
+    <string name="settings_openhab_theme">主题</string>
+    <string name="settings_openhab_appversion">App版本</string>
+    <string name="settings_openhab_sslcert">忽略SSL证书</string>
+    <string name="settings_openhab_sslcert_summary">在SSL握手时忽略证书验证</string>
+    <string name="settings_openhab_sslhost">忽略SSL主机名</string>
+    <string name="settings_openhab_sslhost_summary">在SSL握手时忽略主机名校验</string>
+    <string name="settings_openhab_fullscreen">全屏</string>
+    <string name="settings_openhab_fullscreen_summary">全屏显示</string>
+    <string name="settings_openhab_icon_format">图标格式</string>
+    <string name="settings_ringtone">铃声</string>
     <!-- App messages strings -->
     <string name="title_voice_widget">openHAB Voice Commands</string>
     <string name="info_voice_input">"openHAB, at your command!"</string>
@@ -89,14 +89,14 @@
     <string name="action_settings">Settings</string>
     <string name="nfc_dialog_title">Please select NFC tag action</string>
     <string name="select_dialog_title">请选择在线控制模式</string>
-    <string name="info_not_set">Not set</string>
+    <string name="info_not_set">未设置</string>
     <!-- Strings for MemorizingTrustManager activity -->
     <string name="mtm_accept_cert">Accept unknown Certificate?</string>
     <string name="mtm_decision_always">Always</string>
     <string name="mtm_decision_once">Once</string>
     <string name="mtm_decision_abort">Abort</string>
     <string name="mtm_notification">Certificate verification</string>
-    <string name="settings_openhab_none">none</string>
+    <string name="settings_openhab_none">无</string>
     <!-- theme -->
     <string name="theme_value_light">light</string>
     <string name="theme_value_dark">dark</string>
